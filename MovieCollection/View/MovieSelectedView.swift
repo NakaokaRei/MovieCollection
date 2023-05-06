@@ -16,6 +16,7 @@ struct MovieSelectedView: View {
         VStack {
             collectionView
             saveButton
+            shareToInstagramStoryButton
         }
 
     }
@@ -38,6 +39,18 @@ extension MovieSelectedView {
     var saveButton: some View {
         Button(action: save) {
             Text("Save")
+                .padding()
+                .frame(maxWidth: .infinity)
+                .font(.title2)
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(30)
+        }
+    }
+
+    var shareToInstagramStoryButton: some View {
+        Button(action: { Task { try await shareToInstagramStory() } }) {
+            Text("Share to Instagram Story")
                 .padding()
                 .frame(maxWidth: .infinity)
                 .font(.title2)
@@ -83,6 +96,23 @@ extension MovieSelectedView {
             if let image = renderer.uiImage {
                 UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
             }
+        }
+    }
+
+    @MainActor
+    func shareToInstagramStory() async throws {
+        let renderView = try await render()
+        let renderer = ImageRenderer(content: renderView)
+        renderer.scale = displayScale
+
+        if let image = renderer.uiImage {
+            let pasteboardItems = [
+                ["com.instagram.sharedSticker.backgroundImage": image.pngData()!] as [String : Any],
+                ["com.instagram.sharedSticker.backgroundTopColor": "#ff5a60"],
+                ["com.instagram.sharedSticker.backgroundBottomColor": "#ff5a60"]
+            ]
+            UIPasteboard.general.setItems(pasteboardItems)
+            await UIApplication.shared.open(URL(string: "instagram-stories://share")!)
         }
     }
 }
