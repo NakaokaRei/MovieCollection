@@ -9,7 +9,7 @@ import Foundation
 
 final class APIClient {
 
-    let apiKey = ""
+    let apiKey = Bundle.main.infoDictionary!["API_KEY"] as! String
 
     func fetchMoviePosterURL(movieName: String) async throws -> [URL] {
         let encodedMovieName = movieName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!

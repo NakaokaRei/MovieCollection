@@ -29,6 +29,8 @@
 		5C4D51C72A06028400F127FD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5C4D51C92A06035500F127FD /* MovieSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResponse.swift; sourceTree = "<group>"; };
 		5C4D51CE2A06072400F127FD /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		5C4D51D22A0624C400F127FD /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
+		5C4D51D32A0625CA00F127FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 				5C4D51CD2A06070600F127FD /* ViewModel */,
 				5C4D51CC2A0606CF00F127FD /* API */,
 				5C4D51CB2A0606C100F127FD /* View */,
-				5C4D51B92A04EEDB00F127FD /* Assets.xcassets */,
+				5C4D51D42A0626BF00F127FD /* SupportingFiles */,
 				5C4D51BB2A04EEDB00F127FD /* Preview Content */,
 			);
 			path = MovieCollection;
@@ -104,6 +106,16 @@
 				5C4D51CE2A06072400F127FD /* MovieSearchViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C4D51D42A0626BF00F127FD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C4D51B92A04EEDB00F127FD /* Assets.xcassets */,
+				5C4D51D22A0624C400F127FD /* env.xcconfig */,
+				5C4D51D32A0625CA00F127FD /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +203,7 @@
 /* Begin XCBuildConfiguration section */
 		5C4D51BE2A04EEDB00F127FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4D51D22A0624C400F127FD /* env.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -251,6 +264,7 @@
 		};
 		5C4D51BF2A04EEDB00F127FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4D51D22A0624C400F127FD /* env.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -314,6 +328,7 @@
 				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieCollection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +358,7 @@
 				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieCollection/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
