@@ -11,6 +11,7 @@ import Foundation
 class MovieSearchViewModel: ObservableObject {
 
     @Published var moviePosterURLs: [URL] = []
+    @Published var selectedImages: Set<URL> = []
 
     let apiClient = APIClient()
 
