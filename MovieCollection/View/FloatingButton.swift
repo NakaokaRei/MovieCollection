@@ -17,10 +17,10 @@ struct FloatingButton: View {
             Text("Create Image (Selected: \(selectedNumber))")
                 .padding()
                 .frame(maxWidth: .infinity)
-                .font(.title)
+                .font(.title2)
                 .foregroundColor(.white)
                 .background(selectedNumber >= 9 ? Color.blue: Color.gray)
-                .cornerRadius(10)
+                .cornerRadius(30)
         }
         .disabled(selectedNumber < 9)
         .padding()
