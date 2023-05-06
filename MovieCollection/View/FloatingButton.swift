@@ -1,5 +1,5 @@
 //
-//  NextButton.swift
+//  FloatingButton.swift
 //  MovieCollection
 //
 //  Created by NakaokaRei on 2023/05/06.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct NextButton: View {
+struct FloatingButton: View {
 
     let selectedNumber: Int
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Text("Next (Selected: \(selectedNumber))")
+            Text("Create Image (Selected: \(selectedNumber))")
                 .padding()
                 .frame(maxWidth: .infinity)
                 .font(.title)
@@ -27,8 +27,8 @@ struct NextButton: View {
     }
 }
 
-struct NextButton_Previews: PreviewProvider {
+struct FloatingButton_Previews: PreviewProvider {
     static var previews: some View {
-        NextButton(selectedNumber: 5, action: {})
+        FloatingButton(selectedNumber: 5, action: {})
     }
 }

@@ -10,21 +10,27 @@ import SwiftUI
 struct MovieSearchView: View {
 
     @StateObject private var viewModel = MovieSearchViewModel()
-    @State var searchText = ""
+    @State private var searchText = ""
+    @State private var isPresented = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             MovieSearchResultView(
                 moviePosterURLs: $viewModel.moviePosterURLs,
                 selectedImages: $viewModel.selectedImages
             )
+            .navigationDestination(isPresented: $isPresented) {
+                MovieSelectedView(selectedImages: $viewModel.selectedImages)
+            }
             .padding()
             .navigationTitle("Movie Collection")
         }
         .searchable(text: $searchText, prompt: Text("Movie Name"))
         .overlay(alignment: .bottom) {
-            NextButton(selectedNumber: viewModel.selectedImages.count) {
-                //
+            if !isPresented {
+                FloatingButton(selectedNumber: viewModel.selectedImages.count) {
+                    isPresented = true
+                }
             }
         }
         .onSubmit(of: .search) {

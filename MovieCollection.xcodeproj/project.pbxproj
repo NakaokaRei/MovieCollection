@@ -18,7 +18,7 @@
 		5C4D51CF2A06072400F127FD /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D51CE2A06072400F127FD /* MovieSearchViewModel.swift */; };
 		5C5644FA2A06342B0012D58D /* MovieSearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5644F92A06342B0012D58D /* MovieSearchResultView.swift */; };
 		5C5644FC2A0635F00012D58D /* MovieSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5644FB2A0635F00012D58D /* MovieSelectedView.swift */; };
-		5C5644FE2A063F220012D58D /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5644FD2A063F220012D58D /* NextButton.swift */; };
+		5C5644FE2A063F220012D58D /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5644FD2A063F220012D58D /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		5C4D51D22A0624C400F127FD /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		5C5644F92A06342B0012D58D /* MovieSearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResultView.swift; sourceTree = "<group>"; };
 		5C5644FB2A0635F00012D58D /* MovieSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSelectedView.swift; sourceTree = "<group>"; };
-		5C5644FD2A063F220012D58D /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		5C5644FD2A063F220012D58D /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 				5C4D51B52A04EEDA00F127FD /* MovieCollectionApp.swift */,
 				5C5644F92A06342B0012D58D /* MovieSearchResultView.swift */,
 				5C5644FB2A0635F00012D58D /* MovieSelectedView.swift */,
-				5C5644FD2A063F220012D58D /* NextButton.swift */,
+				5C5644FD2A063F220012D58D /* FloatingButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5644FE2A063F220012D58D /* NextButton.swift in Sources */,
+				5C5644FE2A063F220012D58D /* FloatingButton.swift in Sources */,
 				5C4D51C42A050FD600F127FD /* MovieSearchView.swift in Sources */,
 				5C5644FC2A0635F00012D58D /* MovieSelectedView.swift in Sources */,
 				5C4D51CF2A06072400F127FD /* MovieSearchViewModel.swift in Sources */,

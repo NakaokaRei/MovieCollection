@@ -12,22 +12,14 @@ struct MovieSelectedView: View {
     @Binding var selectedImages: Set<URL>
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Selected")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
-                    ForEach(Array(selectedImages), id: \.self) { url in
-                        MovieCell(url: url)
-                            .frame(maxWidth: 40)
-                            .cornerRadius(8)
-                    }
-
+        ScrollView {
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 16) {
+                ForEach(Array(selectedImages), id: \.self) { url in
+                    MovieCell(url: url)
+                        .cornerRadius(8)
                 }
             }
         }
+        .padding()
     }
 }
