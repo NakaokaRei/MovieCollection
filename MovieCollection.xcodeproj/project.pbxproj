@@ -30,7 +30,6 @@
 		5C4D51C92A06035500F127FD /* MovieSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResponse.swift; sourceTree = "<group>"; };
 		5C4D51CE2A06072400F127FD /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
 		5C4D51D22A0624C400F127FD /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
-		5C4D51D32A0625CA00F127FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +112,6 @@
 			children = (
 				5C4D51B92A04EEDB00F127FD /* Assets.xcassets */,
 				5C4D51D22A0624C400F127FD /* env.xcconfig */,
-				5C4D51D32A0625CA00F127FD /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
