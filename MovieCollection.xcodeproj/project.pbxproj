@@ -339,6 +339,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieCollection/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app adds photo to iPhone ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app adds photo to iPhone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -369,6 +371,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieCollection/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app adds photo to iPhone ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app adds photo to iPhone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
