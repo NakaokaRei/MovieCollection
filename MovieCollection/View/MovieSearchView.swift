@@ -22,6 +22,11 @@ struct MovieSearchView: View {
             .navigationTitle("Movie Collection")
         }
         .searchable(text: $searchText, prompt: Text("Movie Name"))
+        .overlay(alignment: .bottom) {
+            NextButton(selectedNumber: viewModel.selectedImages.count) {
+                //
+            }
+        }
         .onSubmit(of: .search) {
             Task {
                 try await viewModel.searchMovie(query: searchText)

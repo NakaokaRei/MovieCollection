@@ -23,7 +23,7 @@ struct MovieSearchResultView: View {
                             .onTapGesture {
                                 if selectedImages.contains(url) {
                                     selectedImages.remove(url)
-                                } else {
+                                } else if selectedImages.count < 9 {
                                     selectedImages.insert(url)
                                 }
                             }
